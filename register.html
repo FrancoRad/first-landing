@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./img/logo_navbar.jpg">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Register</title>
+</head>
+<!-- Info sacada de: https://www.youtube.com/watch?v=F7Mi1c3DFBs -->
+<body>
+   <header>
+    <a href="./index.html"><img class="fixed" src="./img/logo.webp" alt="logo_navbar"></a>      <div class="vacio"></div>
+      <nav>
+          <label for="menu-toggle">
+              <div class="menu-button">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+              </div>
+          </label>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+          <ul id="menu" class="toggle">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="./register.html">Registrarse</a></li>
+            <li><a href="./log.html">Loguearse</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <section>
+      <div class="header">
+        <h1>Crea tu cuenta</h1>
+      </div>
+      <div class="text">
+        <ul class="text_padding">
+            <li class="text_padding">Email</li>
+            <li class="text_padding"><input type="email" placeholder="Ingrese su Email" name="" id=""></li>
+            <li class="input text_padding">
+              <input type="checkbox"  name="" id="">
+              <p>Quiero suscribirme al newsletter de GoPro</p>
+            </li>
+            <li class="input text_padding">
+              <input type="checkbox" name="aceptado" id="">
+              <p>Soy mayor de 18 años, he leído y aceptado los <span>Términos y condiciones</span> del sitio.</p>
+            </li>
+            <li class="text_center text_padding cont"><h2>Continuar</h2></li>
+            <li class="text_center text_padding regis"><h2>O regístrate con</h2></li>
+            <li class="text_padding">
+              <ul class="register_red_social text_padding">
+                  <li class="border_google text_padding">
+                    <i class="fab fa-google"></i>
+                    Google 
+                  </li>
+                  <li class="border_facebook text_padding">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook 
+                  </li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <div class="register_image"></div>
+  </main>
+  <footer>
+        <p>Desing by Franco Rad - NUCBA</p>
+  </footer>
+</body>
+</html>

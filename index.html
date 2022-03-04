@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./img/logo_navbar.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cube.css">
+    <link rel="stylesheet" href="./hover.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img class="fixed" src="./img/logo.webp" alt="logo_navbar"></a>        <div class="vacio"></div>
+        <nav>
+            <label for="menu-toggle">
+                <div class="menu-button">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                </div>
+            </label>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <ul id="menu" class="toggle">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="./register.html">Registrarse</a></li>
+                <li><a href="./log.html">Loguearse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="conteiner">
+        <div class="cube">
+            <div class="side front"><img src="./img/cube1.webp" alt="img cubo cara 1" width="400" height="400"></div>
+            <div class="side back"><img src="./img/cube2.webp" alt="img cubo cara 2" width="400" height="400"></div>
+            <div class="side right"><img src="./img/cube3.webp" alt="img cubo cara 3" width="400" height="400"></div>
+            <div class="side left"><img src="./img/cube4.webp" alt="img cubo cara 4" width="400" height="400"></div>
+            <div class="side top"><img src="./img/cube5.webp" alt="img cubo cara 5" width="400" height="400"></div>
+            <div class="side bottom"><img src="./img/cube6.webp" alt="img cubo cara 6" width="400" height="400"></div>
+        </div>
+    </div>
+    <main>
+        <div class="venta">
+             <div class="hero10">
+                <img src="./img/10.png" alt="go pro 10" height="150" width="150">
+            </div>
+            <div class="hero9">
+                <img src="./img/9.png" alt="go pro 9" height="150" width="150">
+            </div>
+            <div class="max">
+                <img src="./img/max.png" alt="go pro max" height="150" width="150">
+            </div>
+            <div class="hero8">
+                <img src="./img/8black.jpg" alt="go pro 8 black" height="150" width="150">
+            </div>
+        </div>
+        <!-- Info sacada de: https://www.youtube.com/watch?v=F7Mi1c3DFBs -->
+        <section class="slider" id="imagenes">
+            <div class="slider_conteiner">
+                <img src="./assets/leftarrow.svg" class="slider_arrow" id="before" width="30" height="30">
+                    <section class="slider_body slider_body-show one" data-id="1"> 
+                        <figure class="picture">
+                            <img src="./img/img1.webp" class="slider_img">
+                        </figure>
+                    </section>
+                <section class="slider_body two" data-id="2">
+                    <figure class="picture">
+                        <img src="./img/img2.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body three" data-id="3">
+                    <figure class="picture">
+                        <img src="./img/img3.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body four" data-id="4">
+                    <figure class="picture">
+                        <img src="./img/img4.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body five" data-id="5">
+                    <figure class="picture">
+                        <img src="./img/img5.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body six" data-id="6">
+                    <figure class="picture">
+                        <img src="./img/img6.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body seven" data-id="7">
+                    <figure class="picture">
+                        <img src="./img/img7.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body eight" data-id="8">
+                    <figure class="picture">
+                        <img src="./img/img8.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body nine" data-id="9">
+                    <figure class="picture">
+                        <img src="./img/img9.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body ten" data-id="10">
+                    <figure class="picture">
+                        <img src="./img/img10.webp" class="slider_img"> 
+                    </figure> 
+                </section>
+                <section class="slider_body eleven" data-id="11" >
+                    <figure class="picture">
+                        <img src="./img/img11.webp" class="slider_img">
+                    </figure>
+                </section>
+                <section class="slider_body twelve" data-id="12">
+                    <figure class="picture">
+                        <img src="./img/img12.webp" class="slider_img">
+                    </figure>
+                </section>
+                <img src="./assets/rightarrow.svg" class="slider_arrow" id="next" width="30" height="30">
+            </div>
+        </section>
+        <script src="./slider.js"></script>
+    </main>
+    <footer id="contacto">
+        <hr>
+        <div class="ubicacion">
+            <div class="footer izquierda">
+                <ul class="lista ul1">
+                    <li></li>
+                    <li><span class="icon"><i class="far fa-envelope"></i> </span>contacto@gopro.com.ar</li>
+                    <li><span class="icon"><i class="fas fa-phone"></i> </span>4583263</li>
+                    <li><span class="icon"><i class="fab fa-whatsapp"></i> </span>341 3816539</li>
+                    <li></li>
+                    <li><span>Únete al movimiento GoPro</span></li>
+                        <hr>
+                        <div class="footerLista1">
+                            <ul>
+                                <div class="fb"><li><a href="http://www.facebook.com" target="_blank" class="icon-facebook"><i class="fab fa-facebook-square"></i>
+                                </a></li></div>
+                                <div class="tw"><li><a href="http://www.twitter.com" target="_blank" class="icon-twitter"><i class="fab fa-twitter-square"></i>
+                                </a></li></div>
+                                <div class="yt"><li><a href="http://www.youtube.com" target="_blank" class="icon-youtube"><i class="fab fa-youtube"></i>
+                                </a></li></div>
+                                <div class="p"><li><a href="http://www.pinterest.com" target="_blank" class="icon-pinterest"><i class="fab fa-pinterest-square"></i>
+                                </a></li></div>
+                                <div class="ig"><li><a href="http://www.instagram.com" target="_blank" class="icon-instagram"><i class="fab fa-instagram"></i>
+                                </a></li></div>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="centro">
+                <p><span>Más información</span></p>
+                <hr>
+                <ol class="footer lista ul2">
+                    <div class="footerLista2">
+                        <li><a href="./index.html"> ¿Cómo comprar?</a> </li>
+                        <li><a href="./index.html"> Manuales</a></li>
+                        <li><a href="./index.html"> Términos y condiciones</a></li>
+                        <li><a href="./index.html"> Política de devoluciones</a></li>
+                        <li><a href="./index.html"> Software Updates</a></li>
+                        <li><a href="./index.html"> Trabaja con nosotros!</a></li>    
+                        <li></li>
+                    </div>
+                </ol>
+            </div>
+            <div class="footer derecha">
+                <p><span>Ubicación</span></p>
+                <hr>
+                <ul class="lista ul3">
+                    <li>Av. Rivadavia 1800 - Rosario</li>
+                    <li><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=av%20rivadavia%201800,%20rosario+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe></div></li>
+                </ul>
+            </div>
+        </div>
+        <p>Desing by Franco Rad - NUCBA</p>
+    </footer>
+
+</body>
+</html>

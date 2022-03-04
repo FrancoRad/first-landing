@@ -1,0 +1,196 @@
+/* Defaults */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-bodex;
+}
+body{  
+    background-color: black;
+}
+main{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.register_image{
+    background-image: url(./img/tienda-online.jpg);
+    background-repeat: no-repeat;
+    width: 600px;
+    border-bottom-right-radius: 20px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0px 0px 0px 10px;
+    border: rgb(155, 132, 141) 2px solid;
+    border-top-left-radius: 20px;
+}
+span{
+    color: rgb(38, 38, 235);
+    cursor: pointer;
+}
+.text, li{
+    list-style:none;
+    text-decoration: none;
+    /*padding: .5em;*/
+}
+.text_padding{
+    padding: .5em;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+}
+.input, p{
+    padding-left: .5em;
+}
+.text_center{
+    text-align: center;
+    cursor: pointer;
+}
+.cont{
+    border: rgb(93, 154, 233) 3px solid;
+    background-color: rgb(118, 154, 202);
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+.register_red_social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.border_google, .border_facebook{
+    cursor: pointer;
+    border: white 3px solid;
+    border-radius: 10px;
+    width: 90px;
+    word-spacing: .5em;
+    text-align: center;
+}
+footer{
+    padding-top: 10%;
+    color: white;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+/* Media Queries */
+@media only screen and (min-width: 626px) {
+    body{
+        background-image: url(./img/img_background.jpg!d);
+        background-repeat: no-repeat;
+        background-color: black;
+        padding-top: 1em;
+        width: 100%;
+    }
+    .menu-toggle{
+        visibility: hidden;
+    }
+    header{
+        /*background-image: linear-gradient(70deg, white, grey);*/
+        font-family:Arial, Helvetica, sans-serif;
+        width: 100%; /* Delimita el ancho del navbar */
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggle{
+        margin-top: -30px;
+    }
+    .fixed{
+        position: fixed;
+    }
+    header ul{
+        /* Borra los puntos del ul y il */
+        list-style: none;
+    }
+    #menu li a{
+        color: whitesmoke;
+        padding: 10px; 
+        display: block;
+        text-decoration: none; /* Borra el subrayado del link */
+        min-width: 50px; /* Da espacio entre cada link */
+    }
+    #menu li a:hover{
+        color: black;
+        background-color: white;
+    }
+    #menu li{
+        float: left;
+        text-align: center;
+    }
+    main{
+        padding-top: 8%;
+    }
+
+}
+@media only screen and (max-width: 625px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        padding-top: 10%;
+    }
+    /*menu hamburguesa*/
+    .menu-button {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 7px;
+        background: rgb(36, 35, 35);
+        color: white;
+        cursor: pointer;  
+    }    
+    .menu-button span {
+        width: 40px;
+        height: 4px;
+        background: white; 
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .toggle {
+        display: none;
+        text-align: center;
+        background: rgb(26, 25, 25);
+        border-radius: 7px;
+        padding: 20px;
+        width: 150px;
+        margin: 10px auto;
+    }
+    
+    .toggle li {
+        list-style: none;
+        display: block;
+        padding: 10px 0;
+        color: #fafafa;
+    }
+    
+    .menu-toggle:checked + .toggle {
+        display: block;
+    }
+    footer{
+        padding-top: 10%;
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    
+}
