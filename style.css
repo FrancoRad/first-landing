@@ -1,447 +1,444 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu li a{
+    color: whitesmoke;
+    text-decoration: none; /* Borra el subrayado del link */
+}
+header{
+    font-family:Arial, Helvetica, sans-serif;
+}
+main{
+    padding-top: 20%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ventas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: white;
+    background-color: red;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion .izquierda, .centro, .derecha{
+    width: 350px;
+    text-align: left;
+}
+.ubicacion hr{
+    margin-top: 5%;
+}
+
+.lista li{
+    text-align: left;
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none; 
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 626px) {
+    body{
+        background-image: url(./img/img_background.jpg!d);
+        background-repeat: no-repeat;
+        background-color: black;
+        padding-top: 1em;
+        width: 100%;
+    }
+    input{
+        visibility: hidden;
+    }
+    header{
+        /*background-image: linear-gradient(70deg, white, grey);*/
+        font-family:Arial, Helvetica, sans-serif;
+        width: 100%; /* Delimita el ancho del navbar */
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggle{
+        margin-top: -30px;
+    }
+    .fixed{
+        position: fixed;
+    }
+    header ul{
+        /* Borra los puntos del ul y il */
+        list-style: none;
     }
     #menu li a{
         color: whitesmoke;
+        padding: 10px; 
+        display: block;
         text-decoration: none; /* Borra el subrayado del link */
+        min-width: 50px; /* Da espacio entre cada link */
     }
-    header{
-        font-family:Arial, Helvetica, sans-serif;
+    #menu li a:hover{
+        color: black;
+        background-color: white;
     }
-    main{
-        padding-top: 20%;
-        width: 100%;
-        height: auto;
+    #menu li{
+        float: left;
+        text-align: center;
+    }
+    .front{
+        width: 400px;
+        height: 400px;
+    }
+    .back{
+        width: 400px;
+        height: 400px;
+    }
+    .right{
+        width: 400px;
+        height: 400px;
+    }
+    .left{
+        width: 400px;
+        height: 400px;
+    }
+    .top{
+        width: 400px;
+        height: 400px;
+    }
+    .bottom{
+        width: 400px;
+        height: 400px;
+    }
+    footer .ubicacion{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10% 5% 10% ;
     }
-    .ventas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    h2{
+    footer{
+        padding-top: 10%;
         color: white;
-        background-color: red;
-        width: 150px;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    .footerLista1, .footerLista2{
+        width: 200px;
+        margin-left: 10%;
+        
+    }
+    .footerLista1 ul{
         display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    .fb a, .yt a, .tw a, .p a, .ig a{
+        color: white;
+        font-size: 2em;
+    }
+    .footerLista2 li a{
+        color: rgb(83, 83, 247);
+        text-decoration: none;
+    }
+    span{
+        font-size: 1.5em;
+        font-family: cursive ;
+    }
+    span .icon {
+        color: white;
+        font-family: 'Font Awesome 5 Free';
+    }
+    .venta{
+        display: flex;
+        height: 250px;
+        width: 50%;
+        justify-content: space-around;
+        font-family: 'Poppins', sans-serif;
+    }
+    .slider{ 
+        width: 80%;
+        /*queda centrado depende de la cantidad de imagenes que entren en una fila*/
+    }
+    .slider_arrow{
+        width: 0px;
+        height: 0px;
+    }
+    .slider_conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .2em;
+    }
+    .slider_img{
+        height: 300px;
+        width: 300px;
+    }
+    /*HOVER DE REDES SOCIALES*/
+    li{
+        overflow:hidden;
+    }
+    .ig{   
+        width: auto;
+        height: auto;
+        align-items: center;
+        
+    }
+    .fb:hover {
+        height: 55px;
+        width: 55px;
+        margin: 0 auto;
+        animation-name: fb;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    
+    @keyframes fb {
+        0% {
+            border-radius: 100%;
+            background:  #3b5998;
+        }
+    }
+    .tw:hover {
+        height: 55px;
+        width: 55px;
+        margin: 0 auto;
+        animation-name: tw;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    
+    @keyframes tw {
+        0% {
+            border-radius: 100%;
+            background:  #55acee;
+        }
+    }
+    .yt:hover {
+        height: 55px;
+        width: 55px;
+        margin: 0 auto;
+        animation-name: yt;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    
+    @keyframes yt {
+        0% {
+            border-radius: 100%;
+            background:  #bb0000;
+        }
+    }
+    .p:hover {
+        height: 55px;
+        width: 55px;
+        margin: 0 auto;
+        animation-name: p;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    
+    @keyframes p {
+        0% {
+            border-radius: 100%;
+            background:  #cb2027;
+        }
+    }
+    .ig:hover {
+        height: 55px;
+        width: 55px;
+        margin: 0 auto;
+        animation-name: ig;
+        animation-duration: 1.5s; 
+        animation-timing-function: ease-out; 
+        animation-delay: 0;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+    }
+    
+    @keyframes ig {
+        0% {
+            border-radius: 100%;
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);    
+        }
+    }
+
+}
+
+@media only screen and (max-width: 625px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        padding-top: 10%;
+    }
+    /*menu hamburguesa*/
+    .menu-button {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 60px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 7px;
+        background: rgb(36, 35, 35);
+        color: white;
+        cursor: pointer;
+    }
+    .menu-button span {
+        width: 40px;
+        height: 4px;
+        background: white;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .toggle {
+        display: none;
+        text-align: center;
+        background: rgb(26, 25, 25);
+        border-radius: 7px;
+        padding: 20px;
+        width: 150px;
+        margin: 10px auto;
+    }
+        .toggle li {
+            list-style: none;
+            display: block;
+            padding: 10px 0;
+            color: #fafafa;
+    }
+        .menu-toggle:checked + .toggle {
+            display: block;
+    }
+    .conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden; 
+    }
+    .side{
+        width: 300px;
+        height: 300px;
+    }   
+    .slider{
+        margin-top: 10px;
+        margin-left: -40px;
+        background-color: black;
+    }
+    .slider_conteiner{
+        display: grid;
+        grid-template-columns: 25px 250px 0px;
+        align-items: center; /*se centra verticalmente*/
+        gap: 1em; /*espaciado de 1 em*/
+    }
+    .slider_body{
+        /*TODOS LOS ELEMENTOS SE AMONTONAN*/
+        grid-column: 2/3;/*comienza linea 2 de columna y termina en la 3*/
+        grid-row: 1/3;/*En fila: comienza en la 1 y termina en la 2*/
+        opacity: 0;
+        pointer-events: none; /*para que no reconozca el mouse*/
+        display: grid;
+        align-items: center;
+        transition: opacity 1.5s; /*transicion a la opacidad de 1.5seg*/
+    }
+    .slider_body-show{
+        /*COMIENZO DEL SLIDER*/
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .slider_img{
+        width: 250px;
+        height: 250px;
+        display: block;
+    }
+    .slider_arrow{
+        background-color: white;
+        width: auto;
+        height: auto;
+    }
+    .venta{
+        height: auto;
+        font-family: 'Poppins', sans-serif;
+        align-items: center; 
         justify-content: center;
     }
-    
-    .ubicacion .izquierda, .centro, .derecha{
-        width: 350px;
-        text-align: left;
+    .hero10, .hero9, .max, .hero8{
+        margin-top: 10px;
+        margin-bottom: 35px;
+        padding-bottom: 30px;
     }
-    .ubicacion hr{
-        margin-top: 5%;
+    footer{
+        padding-top: 10%;
+        color: white;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;    
     }
-    
-    .lista li{
-        text-align: left;
-        color: whitesmoke;
-        padding: 10px;
-        text-decoration: none; 
+    .ubicacion, .footerLista1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* Media Queries */
+    .footer .izquierda{
+        display: flex;
+        align-items: center;
+    }
 
-    @media only screen and (min-width: 626px) {
-        body{
-            background-image: url(./img/img_background.jpg!d);
-            background-repeat: no-repeat;
-            background-color: black;
-            padding-top: 1em;
-            width: 100%;
-        }
-        input{
-            visibility: hidden;
-        }
-        header{
-            /*background-image: linear-gradient(70deg, white, grey);*/
-            font-family:Arial, Helvetica, sans-serif;
-            width: 100%; /* Delimita el ancho del navbar */
-            display: flex;
-            justify-content: space-between;
-        }
-        .toggle{
-            margin-top: -30px;
-        }
-        .fixed{
-            position: fixed;
-        }
-        header ul{
-            /* Borra los puntos del ul y il */
-            list-style: none;
-        }
-        #menu li a{
-            color: whitesmoke;
-            padding: 10px; 
-            display: block;
-            text-decoration: none; /* Borra el subrayado del link */
-            min-width: 50px; /* Da espacio entre cada link */
-        }
-        #menu li a:hover{
-            color: black;
-            background-color: white;
-        }
-        #menu li{
-            float: left;
-            text-align: center;
-        }
-        .front{
-            width: 400px;
-            height: 400px;
-        }
-        .back{
-            width: 400px;
-            height: 400px;
-        }
-        .right{
-            width: 400px;
-            height: 400px;
-        }
-        .left{
-            width: 400px;
-            height: 400px;
-        }
-        .top{
-            width: 400px;
-            height: 400px;
-        }
-        .bottom{
-            width: 400px;
-            height: 400px;
-        }
-        footer .ubicacion{
-            display: flex;
-            justify-content: space-between;
-            padding: 5% 10% 5% 10% ;
-        }
-        footer{
-            padding-top: 10%;
-            color: white;
-            width: 100%;
-            height: 100px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;    
-        }
-        .footerLista1, .footerLista2{
-            width: 200px;
-            margin-left: 10%;
-            
-        }
-        .footerLista1 ul{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
-        }
-        .fb a, .yt a, .tw a, .p a, .ig a{
-            color: white;
-            font-size: 2em;
-        }
-        .footerLista2 li a{
-            color: rgb(83, 83, 247);
-            text-decoration: none;
-        }
-        span{
-            font-size: 1.5em;
-            font-family: cursive ;
-        }
-        span .icon {
-            color: white;
-            font-family: 'Font Awesome 5 Free';
-        }
-        .venta{
-            display: flex;
-            height: 250px;
-            width: 50%;
-            justify-content: space-around;
-            font-family: 'Poppins', sans-serif;
-        }
-        .slider{ 
-            width: 80%;
-            /*queda centrado depende de la cantidad de imagenes que entren en una fila*/
-        }
-        .slider_arrow{
-            width: 0px;
-            height: 0px;
-        }
-        .slider_conteiner{
-            display: flex;
-            flex-wrap: wrap;
-            gap: .2em;
-        }
-        .slider_img{
-            height: 300px;
-            width: 300px;
-        }
-        /*HOVER DE REDES SOCIALES*/
-        li{
-            overflow:hidden;
-        }
-        .ig{   
-            width: auto;
-            height: auto;
-            align-items: center;
-            
-        }
-        .fb:hover {
-            height: 55px;
-            width: 55px;
-            margin: 0 auto;
-            animation-name: fb;
-            animation-duration: 1.5s; 
-            animation-timing-function: ease-out; 
-            animation-delay: 0;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-        }
-        
-        @keyframes fb {
-            0% {
-                border-radius: 100%;
-                background:  #3b5998;
-            }
-        }
-        .tw:hover {
-            height: 55px;
-            width: 55px;
-            margin: 0 auto;
-            animation-name: tw;
-            animation-duration: 1.5s; 
-            animation-timing-function: ease-out; 
-            animation-delay: 0;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-        }
-        
-        @keyframes tw {
-            0% {
-                border-radius: 100%;
-                background:  #55acee;
-            }
-        }
-        .yt:hover {
-            height: 55px;
-            width: 55px;
-            margin: 0 auto;
-            animation-name: yt;
-            animation-duration: 1.5s; 
-            animation-timing-function: ease-out; 
-            animation-delay: 0;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-        }
-        
-        @keyframes yt {
-            0% {
-                border-radius: 100%;
-                background:  #bb0000;
-            }
-        }
-        .p:hover {
-            height: 55px;
-            width: 55px;
-            margin: 0 auto;
-            animation-name: p;
-            animation-duration: 1.5s; 
-            animation-timing-function: ease-out; 
-            animation-delay: 0;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-        }
-        
-        @keyframes p {
-            0% {
-                border-radius: 100%;
-                background:  #cb2027;
-            }
-        }
-        .ig:hover {
-            height: 55px;
-            width: 55px;
-            margin: 0 auto;
-            animation-name: ig;
-            animation-duration: 1.5s; 
-            animation-timing-function: ease-out; 
-            animation-delay: 0;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            animation-fill-mode: none;
-            animation-play-state: running;
-        }
-        
-        @keyframes ig {
-            0% {
-                border-radius: 100%;
-                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);    
-            }
-        }
-
+    .footerLista2 li a{
+        color: rgb(83, 83, 247);
+        text-decoration: none;
+        list-style: none;
     }
-    
-    @media only screen and (max-width: 625px) {
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background-color: black;
-            width: 100%;
-            padding-top: 10%;
-        }
-        /*menu hamburguesa*/
-        .menu-button {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            width: 60px;
-            height: 50px;
-            padding: 10px;
-            border-radius: 7px;
-            background: rgb(36, 35, 35);
-            color: white;
-            cursor: pointer;
-        }
-        .menu-button span {
-            width: 40px;
-            height: 4px;
-            background: white;
-        }
-        .menu-toggle {
-            display: none;
-        }
-         
-        .toggle {
-            display: none;
-            text-align: center;
-            background: rgb(26, 25, 25);
-            border-radius: 7px;
-            padding: 20px;
-            width: 150px;
-            margin: 10px auto;
-        }
-         .toggle li {
-             list-style: none;
-             display: block;
-             padding: 10px 0;
-             color: #fafafa;
-        }
-         .menu-toggle:checked + .toggle {
-             display: block;
-        }
-        .conteiner{
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden; 
-        }
-        .side{
-            width: 300px;
-            height: 300px;
-        }   
-        .slider{
-            margin-top: 10px;
-            background-color: black;
-        }
-        .slider_conteiner{
-            display: grid;
-            grid-template-columns: 25px 250px 0px;
-            align-items: center; /*se centra verticalmente*/
-            gap: 1em; /*espaciado de 1 em*/
-        }
-        .slider_body{
-            /*TODOS LOS ELEMENTOS SE AMONTONAN*/
-            grid-column: 2/3;/*comienza linea 2 de columna y termina en la 3*/
-            grid-row: 1/3;/*En fila: comienza en la 1 y termina en la 2*/
-            opacity: 0;
-            pointer-events: none; /*para que no reconozca el mouse*/
-            display: grid;
-            align-items: center;
-            transition: opacity 1.5s; /*transicion a la opacidad de 1.5seg*/
-        }
-        .slider_body-show{
-            /*COMIENZO DEL SLIDER*/
-            opacity: 1;
-            pointer-events: unset;
-        }
-        .slider_img{
-            width: 250px;
-            height: 250px;
-            display: block;
-
-        }
-        .slider_arrow{
-           background-color: white;
-            width: auto;
-            height: auto;
-        }
-        .venta{
-            height: auto;
-            font-family: 'Poppins', sans-serif;
-            align-items: center; 
-            justify-content: center;
-        }
-        .hero10, .hero9, .max, .hero8{
-            margin-top: 10px;
-            margin-bottom: 35px;
-            padding-bottom: 30px;
-        }
-        footer{
-            padding-top: 10%;
-            color: white;
-            width: 100%;
-            height: auto;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;    
-        }
-        .ubicacion, .footerLista1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer .izquierda{
-            display: flex;
-            align-items: center;
-        }
-
-        .footerLista2 li a{
-            color: rgb(83, 83, 247);
-            text-decoration: none;
-            list-style: none;
-        }
-        .footer{
-            list-style:none;
-            text-decoration: none;
-        }
-        .footer, li{
-            text-decoration: none;
-            list-style:none;
-        }
-        
-        .fb a, .yt a, .tw a, .p a, .ig a{
-            color: white;
-            font-size: 2em;
-        }
-        span{
-            font-size: 1.5em;
-            font-family: cursive ;
-        }
-        span .icon {
-            color: white;
-            font-family: 'Font Awesome 5 Free';
-        }
+    .footer{
+        list-style:none;
+        text-decoration: none;
     }
+    .footer, li{
+        text-decoration: none;
+        list-style:none;
+    }
+    .fb a, .yt a, .tw a, .p a, .ig a{
+        color: white;
+        font-size: 2em;
+    }
+    span{
+        font-size: 1.5em;
+        font-family: cursive ;
+    }
+    span .icon {
+        color: white;
+        font-family: 'Font Awesome 5 Free';
+    }
+}
