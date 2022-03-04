@@ -91,6 +91,30 @@
             float: left;
             text-align: center;
         }
+        .front{
+            width: 400px;
+            height: 400px;
+        }
+        .back{
+            width: 400px;
+            height: 400px;
+        }
+        .right{
+            width: 400px;
+            height: 400px;
+        }
+        .left{
+            width: 400px;
+            height: 400px;
+        }
+        .top{
+            width: 400px;
+            height: 400px;
+        }
+        .bottom{
+            width: 400px;
+            height: 400px;
+        }
         footer .ubicacion{
             display: flex;
             justify-content: space-between;
@@ -126,7 +150,6 @@
             font-size: 1.5em;
             font-family: cursive ;
         }
-    
         span .icon {
             color: white;
             font-family: 'Font Awesome 5 Free';
@@ -291,21 +314,17 @@
             background: rgb(36, 35, 35);
             color: white;
             cursor: pointer;
-            
-         }
-         
-         .menu-button span {
+        }
+        .menu-button span {
             width: 40px;
             height: 4px;
             background: white;
-            
-         }
-         
-         .menu-toggle {
+        }
+        .menu-toggle {
             display: none;
-         }
+        }
          
-         .toggle {
+        .toggle {
             display: none;
             text-align: center;
             background: rgb(26, 25, 25);
@@ -313,36 +332,36 @@
             padding: 20px;
             width: 150px;
             margin: 10px auto;
-         }
-         
+        }
          .toggle li {
              list-style: none;
              display: block;
              padding: 10px 0;
              color: #fafafa;
-         }
-         
+        }
          .menu-toggle:checked + .toggle {
              display: block;
-         }
+        }
         .conteiner{
-            width: 100%;
-            height: auto;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+            overflow: hidden; 
         }
-        
+        .side{
+            width: 300px;
+            height: 300px;
+        }   
         .slider{
             margin-top: 10px;
             background-color: black;
         }
         .slider_conteiner{
             display: grid;
-            grid-template-columns: 20px 250px 0px;
+            grid-template-columns: 25px 250px 0px;
             align-items: center; /*se centra verticalmente*/
-            gap: 2em; /*espaciado de 1 em*/
+            gap: 1em; /*espaciado de 1 em*/
         }
         .slider_body{
             /*TODOS LOS ELEMENTOS SE AMONTONAN*/
@@ -363,7 +382,7 @@
             width: 250px;
             height: 250px;
             display: block;
-            margin: 0 auto;
+
         }
         .slider_arrow{
            background-color: white;
