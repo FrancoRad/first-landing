@@ -6,6 +6,13 @@
     padding: 0;
     box-sizing: border-bodex;
 }
+#menu li a{
+    color: whitesmoke;
+    text-decoration: none; /* Borra el subrayado del link */
+}
+header{
+    font-family:Arial, Helvetica, sans-serif;
+}
 body{  
     background-color: black;
 }
@@ -130,7 +137,6 @@ footer{
     main{
         padding-top: 8%;
     }
-
 }
 @media only screen and (max-width: 625px) {
     body{
@@ -161,11 +167,9 @@ footer{
         height: 4px;
         background: white; 
     }
-    
     .menu-toggle {
         display: none;
     }
-    
     .toggle {
         display: none;
         text-align: center;
@@ -175,14 +179,12 @@ footer{
         width: 150px;
         margin: 10px auto;
     }
-    
     .toggle li {
         list-style: none;
         display: block;
         padding: 10px 0;
         color: #fafafa;
     }
-    
     .menu-toggle:checked + .toggle {
         display: block;
     }
@@ -192,5 +194,4 @@ footer{
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;    
     }
-    
 }

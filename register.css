@@ -6,6 +6,13 @@
     padding: 0;
     box-sizing: border-bodex;
 }
+#menu li a{
+    color: whitesmoke;
+    text-decoration: none; /* Borra el subrayado del link */
+}
+header{
+    font-family:Arial, Helvetica, sans-serif;
+}
 body{  
     background-color: black;
 }
@@ -51,7 +58,6 @@ span{
     border-radius: 10px;
     margin-top: 1em;
 }
-
 .register_red_social{
     display: flex;
     flex-direction: row;
@@ -65,7 +71,6 @@ span{
     word-spacing: .5em;
     text-align: center;
 }
-
 
 /* Media Queries */
 @media only screen and (min-width: 626px) {
@@ -158,17 +163,14 @@ span{
         color: white;
         cursor: pointer;  
     }
-    
     .menu-button span {
         width: 40px;
         height: 4px;
         background: white; 
     }
-    
     .menu-toggle {
         display: none;
     }
-    
     .toggle {
         display: none;
         text-align: center;
@@ -178,14 +180,12 @@ span{
         width: 150px;
         margin: 10px auto;
     }
-    
     .toggle li {
         list-style: none;
         display: block;
         padding: 10px 0;
         color: #fafafa;
     }
-    
     .menu-toggle:checked + .toggle {
         display: block;
     }
@@ -195,5 +195,4 @@ span{
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;    
     }
-
 }
